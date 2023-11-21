@@ -2,11 +2,11 @@
 # SMTP configuration settings.
 ################################################################################
 smtp = {
-    'username': 'username',
-    'password': 'password',
-    'host': 'email-smtp.example.com',
+    'username': '',
+    'password': '',
+    'host': '',
     'port': 587,
-    'from_email': 'email-used-to-send-letters@example.com',
+    'from_email': '',
 }
 
 ################################################################################
@@ -17,13 +17,16 @@ smtp = {
 email_template = {
     'from_name': 'Secret Santa',
     'from_email': smtp['from_email'],
-    'subject': 'Family Christmas',
+    'subject': 'Noel des 4As',
     'body': """
 Ho Ho Ho!
 
-{santa}, you are {recipient}'s secret Santa!
+Noël arrive à grands pas et je ne vais avoir le temps de préparer des cadeaux pour tout le monde.
+{santa}, aide moi et offre un cadeau à {recipient}!
 
-Merry Christmas!
+Un grand merci et un Joyeux Noël à toi!
+
+Le père noël
 """
 }
 
@@ -31,14 +34,17 @@ Merry Christmas!
 # The complete list of all the secret santa's and their email addresses.
 ################################################################################
 santas = {
-    'James': 'james@example.com',
-    'Mary': 'mary@example.com',
-    'Nancy': 'nancy@example.com',
-    'John': 'john@example.com',
-    'Michael': 'michael@example.com',
-    'Lisa': 'lisa@example.com',
-    'David': 'david@example.com',
-    'Linda': 'linda@example.com',
+    'Frédéric': 'flegrand31@gmail.com',
+    'Tom': 'tom.renaudin@etu.ec-lyon.fr',
+    'Pierre-Louis': 'pierre-louis.mourey@etu.ec-lyon.fr',
+    'Martin': 'martin.donnay@etu.ec-lyon.fr',
+    'Paul': 'paul.marin@etu.ec-lyon.fr',
+    'Théo': 'theo.denis-de-senneville@etu.ec-lyon.fr',
+    'Alix': 'alix.macgregor@etu.ec-lyon.fr',
+    'Gaspard': 'gaspard.leridon@etu.ec-lyon.fr',
+    'Wenceslas': 'wenceslas.martinez@etu.ec-lyon.fr',
+    'Léonie': 'leonie.mouchel@etu.ec-lyon.fr',
+    'Antonin': 'antonin.delorme@etu.ec-lyon.fr'
 }
 
 ################################################################################
@@ -48,17 +54,7 @@ santas = {
 # If there are no incompatibles, leave this dictionary empty.
 ################################################################################
 incompatibles = {
-    # Do not allow James to be santa for Mary
-    'James': ('Mary',),
 
-    # Do not allow Mary to be santa for James
-    'Mary': ('James',),
-
-    # Do not allow Nancy to be santa for John or Mary
-    'Nancy': ('John', 'Mary',),
-
-    # Something like below is bad, Linda can't be a secret santa for anyone!
-#   'Linda': ('James', 'Mary', 'Nancy', 'John', 'Michael', 'Lisa', 'David'),
 }
 
 ################################################################################

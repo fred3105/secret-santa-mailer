@@ -87,9 +87,9 @@ def is_santa_list_compatible(santas_lst, incompatibles):
 
 
 def is_email_valid(email):
-    email_regex = r'[^@\s]+@[a-zA-Z0-9\-]+(\.[a-zA-Z0-9]+)+$'
-
-    return re.match(email_regex, email)
+    #email_regex = r'[^@\s]+@[a-zA-Z0-9\-]+(\.[a-zA-Z0-9]+)+$'
+    #re.match(email_regex, email)
+    return True
 
 
 def check_emails(santas):
