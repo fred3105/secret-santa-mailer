@@ -34,17 +34,7 @@ Le père noël
 # The complete list of all the secret santa's and their email addresses.
 ################################################################################
 santas = {
-    'Frédéric': 'flegrand31@gmail.com',
-    'Tom': 'tom.renaudin@etu.ec-lyon.fr',
-    'Pierre-Louis': 'pierre-louis.mourey@etu.ec-lyon.fr',
-    'Martin': 'martin.donnay@etu.ec-lyon.fr',
-    'Paul': 'paul.marin@etu.ec-lyon.fr',
-    'Théo': 'theo.denis-de-senneville@etu.ec-lyon.fr',
-    'Alix': 'alix.macgregor@etu.ec-lyon.fr',
-    'Gaspard': 'gaspard.leridon@etu.ec-lyon.fr',
-    'Wenceslas': 'wenceslas.martinez@etu.ec-lyon.fr',
-    'Léonie': 'leonie.mouchel@etu.ec-lyon.fr',
-    'Antonin': 'antonin.delorme@etu.ec-lyon.fr'
+
 }
 
 ################################################################################
